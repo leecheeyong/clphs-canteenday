@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide {
+  opacity: 0;
+  scale: 0.8;
+  transition: all 1s;
+  filter: blur(5px);
+}
+
+.show {
+  opacity: 1;
+  scale: 1;
+  filter: blur(0);
+}
+
+.hide-skills {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}
+
+.hide:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.hide:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.hide:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+@media (prefers-reduced-motion) {
+  .hide {
+    transition: none;
+  }
+  .hide-skills {
+    transition: none;
+  }
+}
