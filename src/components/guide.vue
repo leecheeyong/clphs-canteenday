@@ -8,9 +8,9 @@ const events = await fetch('https://canteenday-2024.vercel.app/special-events').
 )
 </script>
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center" id="guide">
     <div class="mt-8 py-8 px-6 mx-auto max-w-screen-xl sm:py-16 lg:px-8">
-      <div class="min-w-max mb-8 lg:mb-16" data-aos="fade-down" id="guide">
+      <div class="min-w-max mb-8 lg:mb-16" data-aos="fade-down">
         <h1
           class="mb-2 text-5xl sm:text-left tracking-tight font-extrabold text-gray-900 text-center"
         >
