@@ -38,9 +38,9 @@ const { description, location, date, time, video } = defineProps({
         </div>
         <div class="flex justify-left">
           <a
-            href="https://www.instagram.com/jakechang11/"
+            href="https://www.instagram.com//"
             target="_blank"
-            aria-label="Jake's Instagram"
+            aria-label="Instagram"
             title="Instagram"
             class="inline-flex"
           >

@@ -136,7 +136,7 @@ onMounted(() => {
                 class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >赞助商</a
               ><a
-                href="#shops"
+                href="#stores"
                 class="hover:underline bg-green-200/30 hover:bg-green-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >摊位单</a
               ><a
