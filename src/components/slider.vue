@@ -1,35 +1,41 @@
 <script setup>
-const { description, location, date, time, video } = defineProps({
-  description: String, location: String, date: String, time: String, video:String,
+const { description, location, date, time, video, map } = defineProps({
+  description: String,
+  location: String,
+  date: String,
+  time: String,
+  video: String,
+  map: String,
+  sponsorText: String,
+  sponsorURL: String,
+  sponsors: Array
 })
 import { ref, onMounted } from 'vue'
 import Footer from './footer.vue'
 import About from './about.vue'
-import Skills from './skills.vue'
+import Map from './map.vue'
+import Stores from './stores.vue'
+import Sponsor from './sponsor.vue'
 import Guide from './guide.vue'
-import Reviews from './review.vue'
-const slide = ref(null)
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show')
-      } else {
-        entry.target.classList.remove('show')
-      }
-    })
-  })
-  slide.value.querySelectorAll('.hide').forEach((element) => {
-    observer.observe(element)
-  })
-})
 </script>
 <template>
-  <div class="absolute top-[100vh] w-full bg-[#d7d6d6]" ref="slide" id="about">
-    <about :description="description" :location="location" :date="date" :time="time" :video="video"/>
+  <div class="absolute top-[100vh] w-full bg-[#d7d6d6]" id="about">
+    <about
+      :description="description"
+      :location="location"
+      :date="date"
+      :time="time"
+      :video="video"
+    />
     <Guide />
-    <Skills />
-    <Reviews />
+    <Stores />
+    <Map :map="map" />
+    <Sponsor
+    v-if="sponsorURL"
+    :sponsorText="sponsorText"
+    :sponsorURL="sponsorURL"
+    :sponsors="sponsors"
+  />
     <Footer />
   </div>
 </template>

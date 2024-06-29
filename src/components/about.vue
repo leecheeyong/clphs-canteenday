@@ -1,6 +1,10 @@
 <script setup>
 const { description, location, date, time, video } = defineProps({
-  description: String, location: String, date: String, time: String, video:String,
+  description: String,
+  location: String,
+  date: String,
+  time: String,
+  video: String
 })
 </script>
 <template>
@@ -10,22 +14,22 @@ const { description, location, date, time, video } = defineProps({
     >
       <div class="w-full md:h-[400px] flex justify-center py-4 md:p-10">
         <iframe
-        class="w-full h-full border-0 rounded-lg"
-        :src="video"
-        title="Official Canteen Day 2024 Introduction Video"
-        frameborder="0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allow="encrypted-media; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
+          class="w-full h-full border-0 rounded-lg"
+          :src="video"
+          title="Official Canteen Day 2024 Introduction Video"
+          frameborder="0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allow="encrypted-media; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
       <div class="mt-4 md:mt-0">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-         第63届锺灵独立中学食堂日
+          第63届锺灵独立中学食堂日
         </h2>
         <p class="font-light md:text-lg text-gray-400">
-         {{ description }}
+          {{ description }}
         </p>
         <div class="relative mb-6 max-w-sm text-left text-gray-400">
           <p class="text-left pt-8 text-xl leading-8 sm:text-[24px]">
@@ -74,5 +78,6 @@ const { description, location, date, time, video } = defineProps({
         </div>
       </div>
     </div>
+    
   </section>
 </template>

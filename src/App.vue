@@ -16,6 +16,6 @@
           ></path>
         </svg>
       </div>
-      </template>
+    </template>
   </Suspense>
 </template>

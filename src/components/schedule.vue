@@ -25,7 +25,7 @@ defineProps({
             class="flex flex-col gap-2 py-4 sm:gap-6 sm:flex-row sm:items-center"
             v-for="info in schedule"
           >
-            <p class="w-32 text-2xl font-normal text-gray-500 sm:text-left shrink-0">
+            <p class="text-2xl font-normal text-gray-500 sm:text-left shrink-0">
               {{ info.time }}
             </p>
             <p class="w-32 lg:text-center text-left text-gray-500">
