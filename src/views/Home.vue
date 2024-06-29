@@ -118,30 +118,30 @@ onMounted(() => {
             <p class="mt-16 text-md leading-8 text-gray-800 animate-fadeIn font-semibold">
               <a
                 href="#about"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-yellow-200/30 hover:bg-yellow-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >详情</a
               >
               <a
                 href="#guide"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-blue-200/30 hover:bg-blue-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >指南</a
               >
               <a
                 href="#special-events"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-purple-200/30 hover:bg-purple-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >特殊节目</a
               >
               <a
                 href="#sponsor"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >赞助商</a
               ><a
                 href="#shops"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-green-200/30 hover:bg-green-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >摊位单</a
               ><a
                 href="#map"
-                class="hover:underline bg-gray-200/30 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                class="hover:underline bg-orange-200/30 hover:bg-orange-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >地图</a
               >
             </p>

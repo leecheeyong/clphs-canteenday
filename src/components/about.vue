@@ -61,7 +61,7 @@ const { description, location, date, time, video } = defineProps({
             href="#"
             class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm px-5 py-2.5 text-center"
           >
-            Get in touch
+            关注我们
             <svg
               class="ml-2 -mr-1 w-5 h-5"
               fill="currentColor"
