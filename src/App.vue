@@ -23,16 +23,17 @@ onMounted(() => {
       </video>
     </div>
     <header class="absolute inset-x-0 top-0 z-50 text-white">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
-            <h1>Jake Chang</h1>
-          </a>
-        </div>
-        <div class="lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6"
-            >Contact Me <span aria-hidden="true">&rarr;</span></a
-          >
+      <nav class="flex items-center justify-center p-6 lg:px-8" aria-label="Global">
+        <div class="lg:flex lg:flex-1 lg:justify-center">
+          <div class="flex items-center justify-center gap-6">
+            <a href="/" aria-label="Back to home" title="Home">
+              <img class="h-12 w-auto" src="/Logo.png" alt="" />
+            </a>
+            <h1 class="sm:text-2xl text-xl bg-pink-400 p-2 pl-4 pr-4 rounded-3xl text-white shadow-md shadow-gray">
+              <span class="type-title font-bold"></span>
+            </h1>
+            <img class="h-12 w-auto" src="/school.png" alt="" />
+          </div>
         </div>
       </nav>
       <div class="relative isolate px-6 pt-14 lg:px-8">

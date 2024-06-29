@@ -11,5 +11,15 @@ export default {
     }
   },
   },
-  plugins: [require('preline/plugin')],
+  plugins: [require('preline/plugin'), require('tailwind-typewriter')({
+    wordsets: {
+        title: {
+            words: ["第63届食堂日", "Little Western", "《西域小调》"],
+            repeat: 0,
+            eraseSpeed: 0,
+            caretWidth: 0,
+            writeSpeed: 0.05
+        }
+    }
+})],
 }
