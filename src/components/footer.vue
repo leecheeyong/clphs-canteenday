@@ -3,62 +3,41 @@ const date = new Date().getFullYear()
 </script>
 <template>
   <footer class="w-full bottom-0 py-8">
-    <div class="text-[#7c7b7b] container mx-auto px-4">
-      <hr class="border-gray-200 mb-6 border-b-1" />
-      <div class="flex flex-wrap items-center md:justify-between justify-center">
-        <div class="w-full md:w-4/12 px-4">
-          <div class="text-sm font-semibold py-1">
-            Copyright © {{ date }}
-            <a class="text-sm font-semibold py-1" href="https://joe.js.org" target="_blank"
-              >Chee Yong Lee</a
-            >
-          </div>
-        </div>
-        <div class="w-full md:w-8/12 px-4">
-          <ul class="flex flex-wrap list-none md:justify-end justify-center">
-            <li>
-              <a
-                class="text-sm block py-1 px-3"
-                href="https://github.com/leecheeyong/project-showcase"
-                target="_blank"
-                >Source Code</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-sm block py-1 px-3"
-                href="https://github.com/leecheeyong"
-                target="_blank"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-sm block py-1 px-3"
-                href="https://paypal.me/cheeyonglee"
-                target="_blank"
-                >Donate</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-sm block py-1 px-3"
-                href="mailto:tojoeleeofficial@gmail.com"
-                target="_blank"
-                >Contact</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-sm block py-1 px-3"
-                href="https://github.com/leecheeyong/project-showcase/blob/main/LICENSE"
-                target="_blank"
-                >MIT License</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <span
+        class="block text-3xl text-gray-500 sm:text-center my-2 text-bold flex items-center sm:justify-center gap-4"
+      >
+        <a
+          href="https://clphs.edu.my"
+          target="_blank"
+          aria-label="Chung Ling Private High School Website"
+          title="Chung Ling Private High School"
+          class="pb-1 px-1"
+          ><span class="bg-[url('/school.png')] w-6 h-6 block bg-contain"></span
+        ></a>
+        <a href="#" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+      </span>
+      <span class="block text-xs text-gray-500 sm:text-center font-sans"
+        >Canteen Day © 2024 / Made with 💖 by
+        <a
+          href="https://joe.js.org/"
+          target="_blank"
+          title="Chee Yong Lee's Website"
+          class="hover:underline"
+          >Chee Yong Lee</a
+        ></span
+      >
+      <span class="block text-xs text-gray-500 sm:text-center font-sans"
+        >This project is available as an open source under the terms of
+        <a
+          href="https://github.com/leecheeyong/canteenday/blob/main/LICENSE"
+          title="Project License"
+          target="_blank"
+          class="hover:underline"
+          >the MIT License</a
+        ></span
+      >
     </div>
   </footer>
 </template>
