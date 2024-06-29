@@ -7,8 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        fadeIn: 'fadeIn 0.5s ease',
+      },
       keyframes: {
-    }
+        fadeIn: {
+          '0%': { opacity: '50%' },
+          '100%': { opacity: '100%' },
+        }
+      }
   },
   },
   plugins: [require('preline/plugin'), require('tailwind-typewriter')({

@@ -13,7 +13,8 @@
   "dependencies": {
     "preline": "^2.1.0",
     "tailwind-typewriter": "^1.0.1",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",
