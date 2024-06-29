@@ -31,11 +31,11 @@ import Guide from './guide.vue'
     <Stores />
     <Map :map="map" />
     <Sponsor
-    v-if="sponsorURL"
-    :sponsorText="sponsorText"
-    :sponsorURL="sponsorURL"
-    :sponsors="sponsors"
-  />
+      v-if="sponsorURL"
+      :sponsorText="sponsorText"
+      :sponsorURL="sponsorURL"
+      :sponsors="sponsors"
+    />
     <Footer />
   </div>
 </template>

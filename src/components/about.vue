@@ -78,6 +78,5 @@ const { description, location, date, time, video } = defineProps({
         </div>
       </div>
     </div>
-    
   </section>
 </template>
