@@ -148,5 +148,5 @@ onMounted(() => {
           </div>
         </header>
       </div>
-      <slider />
+      <slider :description="description" :location="location" :date="date" :time="time" :video="video"/>
 </template>

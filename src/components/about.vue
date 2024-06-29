@@ -1,24 +1,37 @@
+<script setup>
+const { description, location, date, time, video } = defineProps({
+  description: String, location: String, date: String, time: String, video:String,
+})
+</script>
 <template>
   <section class="bg-gray-900">
     <div
       class="gap-8 items-center py-8 px-8 mx-auto max-w-screen-xl xl:gap-2 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
-      <div class="w-full flex justify-center py-8">
-        <img
-          class="sm:w-80 sm:h-80 rounded-3xl sm:rounded-xl w-60 h-60"
-          src="/human.png"
-          alt="image"
-        />
+      <div class="w-full md:h-[400px] flex justify-center py-4 md:p-10">
+        <iframe
+        class="w-full h-full border-0 rounded-lg"
+        :src="video"
+        title="Official Canteen Day 2024 Introduction Video"
+        frameborder="0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allow="encrypted-media; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
       </div>
       <div class="mt-4 md:mt-0">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
-          Make every moment memorable
+         第63届锺灵独立中学食堂日
         </h2>
-        <p class="mb-6 font-light md:text-lg text-gray-400">
-          As a photographer who has been in photography and videography career for about a decade,
-          experience and passion is more than enough to be a professional. From shooting events to
-          video editing, we've had everything covered !
+        <p class="font-light md:text-lg text-gray-400">
+         {{ description }}
         </p>
+        <div class="relative mb-6 max-w-sm text-left text-gray-400">
+          <p class="text-left pt-8 text-xl leading-8 sm:text-[24px]">
+            地点：{{ location }}<br />日期：{{ date }}<br />时间：{{ time }}
+          </p>
+        </div>
         <div class="flex justify-left">
           <a
             href="https://www.instagram.com/jakechang11/"
@@ -62,8 +75,4 @@
       </div>
     </div>
   </section>
-  <img
-    class="w-screen absolute z-0"
-    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyMCIgaGVpZ2h0PSIxMDgwIiB2aWV3Qm94PSIwIDAgMTkyMCAxMDgwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxOTIwIiBoZWlnaHQ9IjEwODAiIGZpbGw9IiMxMTE4MjciLz48cGF0aCBkPSJNMTkyMCwxMDgwQzE2MjgsMTE0NS44MzMzMzMzMzMzMzMzLDI5NC42NjY2NjY2NjY2NjY3LDExNDQuNSwwLDEwODBDLTI5NC42NjY2NjY2NjY2NjY3LDEwMTUuNSw5OC44MzMzMzMzMzMzMzMzNCw3MTEuMzMzMzMzMzMzMzMzNCwxNTIsNjkzQzIwNS4xNjY2NjY2NjY2NjY2Niw2NzQuNjY2NjY2NjY2NjY2NiwyNjQuODMzMzMzMzMzMzMzMyw5MzQuMzMzMzMzMzMzMzMzNCwzMTksOTcwQzM3My4xNjY2NjY2NjY2NjY3LDEwMDUuNjY2NjY2NjY2NjY2Niw0MjQuODMzMzMzMzMzMzMzMyw5MjkuMTY2NjY2NjY2NjY2Niw0NzcsOTA3QzUyOS4xNjY2NjY2NjY2NjY2LDg4NC44MzMzMzMzMzMzMzM0LDU3OS4zMzMzMzMzMzMzMzM0LDg1Ni42NjY2NjY2NjY2NjY2LDYzMiw4MzdDNjg0LjY2NjY2NjY2NjY2NjYsODE3LjMzMzMzMzMzMzMzMzQsNzM5LjE2NjY2NjY2NjY2NjYsODE0LjUsNzkzLDc4OUM4NDYuODMzMzMzMzMzMzMzNCw3NjMuNSw5MDEuMTY2NjY2NjY2NjY2Niw2ODQuMTY2NjY2NjY2NjY2Niw5NTUsNjg0QzEwMDguODMzMzMzMzMzMzMzNCw2ODMuODMzMzMzMzMzMzMzNCwxMDYyLjE2NjY2NjY2NjY2NjcsNzk3LjgzMzMzMzMzMzMzMzQsMTExNiw3ODhDMTE2OS44MzMzMzMzMzMzMzMzLDc3OC4xNjY2NjY2NjY2NjY2LDEyMjQuODMzMzMzMzMzMzMzMyw2NTUuMzMzMzMzMzMzMzMzNCwxMjc4LDYyNUMxMzMxLjE2NjY2NjY2NjY2NjcsNTk0LjY2NjY2NjY2NjY2NjYsMTM4MS44MzMzMzMzMzMzMzMzLDU4MS41LDE0MzUsNjA2QzE0ODguMTY2NjY2NjY2NjY2Nyw2MzAuNSwxNTQ0LjE2NjY2NjY2NjY2NjcsNzU4LjgzMzMzMzMzMzMzMzQsMTU5Nyw3NzJDMTY0OS44MzMzMzMzMzMzMzMzLDc4NS4xNjY2NjY2NjY2NjY2LDE2OTguMTY2NjY2NjY2NjY2Nyw2MzMuNjY2NjY2NjY2NjY2NiwxNzUyLDY4NUMxODA1LjgzMzMzMzMzMzMzMzMsNzM2LjMzMzMzMzMzMzMzMzQsMjIxMiwxMDE0LjE2NjY2NjY2NjY2NjYsMTkyMCwxMDgwQzE2MjgsMTE0NS44MzMzMzMzMzMzMzMzLDI5NC42NjY2NjY2NjY2NjY3LDExNDQuNSwwLDEwODAiIGZpbGw9IiNkN2Q2ZDYiLz48L3N2Zz4="
-  />
 </template>
