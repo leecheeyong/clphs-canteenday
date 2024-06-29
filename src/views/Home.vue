@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import slider from '@/components/slider.vue'
-
+import Share from '@/components/share.vue'
 const currentVideo = ref(0)
 const mainInfo = ref({})
 
@@ -194,4 +194,5 @@ onMounted(() => {
     :sponsorURL="sponsorURL"
     :sponsors="sponsors"
   />
+  <Share/>
 </template>
