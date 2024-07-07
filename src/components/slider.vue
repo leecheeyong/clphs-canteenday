@@ -6,8 +6,8 @@ const { description, location, date, time, video, map } = defineProps({
   time: String,
   video: String,
   map: String,
-  sponsorText: String,
-  sponsorURL: String,
+  disableGuide: String,
+  disableStores: String,
   sponsors: Array
 })
 import { ref, onMounted } from 'vue'
@@ -27,12 +27,11 @@ import Guide from './guide.vue'
       :time="time"
       :video="video"
     />
-    <Guide />
-    <Stores />
+    <Guide v-if="disableGuide != 'TRUE'" />
+    <Stores v-if="disableStores != 'TRUE'" />
     <Map :map="map" />
     <Sponsor
       v-if="sponsorURL"
-      :sponsorText="sponsorText"
       :sponsorURL="sponsorURL"
       :sponsors="sponsors"
     />
