@@ -12,7 +12,7 @@ mainInfo.value = await fetch('https://canteenday-2024.vercel.app/').then((r) => 
 
 const videos = await fetch('https://canteenday-2024.vercel.app/images').then((r) => r.json())
 
-const { description, location, date, time, video, logo, map, sponsorText, sponsorURL, sponsors } =
+const { description, location, date, time, video, logo, map, disableGuide, disableStores, sponsorURL, sponsors } =
   mainInfo.value
 
 onMounted(() => {
@@ -196,8 +196,8 @@ onMounted(() => {
     :time="time"
     :video="video"
     :map="map"
-    :sponsorText="sponsorText"
-    :sponsorURL="sponsorURL"
+    :disableStores="disableStores"
+    :disableGuide="disableGuide"
     :sponsors="sponsors"
   />
   <Share />
