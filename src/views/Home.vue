@@ -12,8 +12,19 @@ mainInfo.value = await fetch('https://canteenday-2024.vercel.app/').then((r) => 
 
 const videos = await fetch('https://canteenday-2024.vercel.app/images').then((r) => r.json())
 
-const { description, location, date, time, video, logo, map, disableGuide, disableStores, sponsorURL, sponsors } =
-  mainInfo.value
+const {
+  description,
+  location,
+  date,
+  time,
+  video,
+  logo,
+  map,
+  disableGuide,
+  disableStores,
+  sponsorURL,
+  sponsors
+} = mainInfo.value
 
 onMounted(() => {
   setInterval(() => {

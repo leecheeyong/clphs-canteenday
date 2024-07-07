@@ -1,5 +1,16 @@
 <script setup>
-const { description, location, date, time, video, map, disableGuide, disableStores, sponsors, sponsorURL } = defineProps({
+const {
+  description,
+  location,
+  date,
+  time,
+  video,
+  map,
+  disableGuide,
+  disableStores,
+  sponsors,
+  sponsorURL
+} = defineProps({
   description: String,
   location: String,
   date: String,
@@ -31,11 +42,7 @@ import Guide from './guide.vue'
     <Guide v-if="disableGuide != 'TRUE'" />
     <Stores v-if="disableStores != 'TRUE'" />
     <Map :map="map" />
-    <Sponsor
-      v-if="sponsorURL"
-      :sponsorURL="sponsorURL"
-      :sponsors="sponsors"
-    />
+    <Sponsor v-if="sponsorURL" :sponsorURL="sponsorURL" :sponsors="sponsors" />
     <Footer />
   </div>
 </template>
