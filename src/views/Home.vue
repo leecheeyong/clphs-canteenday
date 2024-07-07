@@ -2,6 +2,9 @@
 import { ref, onMounted } from 'vue'
 import slider from '@/components/slider.vue'
 import Share from '@/components/share.vue'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+AOS.init()
 const currentVideo = ref(0)
 const mainInfo = ref({})
 

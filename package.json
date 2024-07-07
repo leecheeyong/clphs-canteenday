@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "preline": "^2.1.0",
     "tailwind-typewriter": "^1.0.1",
     "vue": "^3.4.21",

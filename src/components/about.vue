@@ -12,7 +12,7 @@ const { description, location, date, time, video } = defineProps({
     <div
       class="gap-8 items-center py-8 px-8 mx-auto max-w-screen-xl xl:gap-2 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
     >
-      <div class="w-full md:h-[400px] flex justify-center py-4 md:p-10">
+      <div class="w-full md:h-[400px] flex justify-center py-4 md:p-10" data-aos="fade-down">
         <iframe
           class="w-full h-full border-0 rounded-lg"
           :src="video"
@@ -24,7 +24,7 @@ const { description, location, date, time, video } = defineProps({
           allowfullscreen
         ></iframe>
       </div>
-      <div class="mt-4 md:mt-0">
+      <div class="mt-4 md:mt-0" data-aos="fade in">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
           第63届锺灵独立中学食堂日
         </h2>
