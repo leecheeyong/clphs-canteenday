@@ -196,6 +196,7 @@ onMounted(() => {
     :time="time"
     :video="video"
     :map="map"
+    :sponsorURL="sponsorURL"
     :disableStores="disableStores"
     :disableGuide="disableGuide"
     :sponsors="sponsors"

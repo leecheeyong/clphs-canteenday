@@ -1,5 +1,5 @@
 <script setup>
-const { description, location, date, time, video, map } = defineProps({
+const { description, location, date, time, video, map, disableGuide, disableStores, sponsors, sponsorURL } = defineProps({
   description: String,
   location: String,
   date: String,
@@ -8,7 +8,8 @@ const { description, location, date, time, video, map } = defineProps({
   map: String,
   disableGuide: String,
   disableStores: String,
-  sponsors: Array
+  sponsors: Array,
+  sponsorURL: String
 })
 import { ref, onMounted } from 'vue'
 import Footer from './footer.vue'
