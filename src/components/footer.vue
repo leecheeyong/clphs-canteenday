@@ -19,19 +19,12 @@ const date = new Date().getFullYear()
         <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
       </span>
       <span class="block text-xs text-gray-500 sm:text-center font-sans"
-        >Canteen Day © 2024 / Made with 💖 by
-        <a
-          href="https://joe.js.org/"
-          target="_blank"
-          title="Chee Yong Lee's Website"
-          class="hover:underline"
-          >Chee Yong Lee</a
-        ></span
+        >Canteen Day © 2024</span
       >
       <span class="block text-xs text-gray-500 sm:text-center font-sans"
         >This project is available as an open source under the terms of
         <a
-          href="https://github.com/leecheeyong/canteenday/blob/main/LICENSE"
+          href="https://github.com/leecheeyong/clphs-canteenday/blob/main/LICENSE"
           title="Project License"
           target="_blank"
           class="hover:underline"
