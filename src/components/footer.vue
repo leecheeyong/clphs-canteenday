@@ -15,12 +15,11 @@ const date = new Date().getFullYear()
           class="pb-1 px-1"
           ><span class="bg-[url('/school.png')] w-6 h-6 block bg-contain"></span
         ></a>
-        <a href="#" target="_blank" title="Instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" target="_blank" title="Facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://instagram.com/clphs_2024canteenday" target="_blank" title="Instagram"
+          ><i class="bx bxl-instagram"></i
+        ></a>
       </span>
-      <span class="block text-xs text-gray-500 sm:text-center font-sans"
-        >Canteen Day © 2024</span
-      >
+      <span class="block text-xs text-gray-500 sm:text-center font-sans">Canteen Day © 2024</span>
       <span class="block text-xs text-gray-500 sm:text-center font-sans"
         >This project is available as an open source under the terms of
         <a

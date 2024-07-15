@@ -4,13 +4,14 @@ import { ref } from 'vue'
 const stores = await fetch('https://canteenday-2024.vercel.app/stores').then((r) => r.json())
 
 const foodCount = ref(stores.filter((store) => store.category === '主食').length)
+const snackCount = ref(stores.filter((store) => store.category === '小吃').length)
 const drinkCount = ref(stores.filter((store) => store.category === '饮料').length)
 const gameCount = ref(stores.filter((store) => store.category === '游戏').length)
 const otherCount = ref(stores.filter((store) => store.category === '甜品').length)
 
+console.log(stores)
 const currentPage = ref('主食')
 const currentShowing = ref(stores.filter((store) => store.category === currentPage.value))
-
 const changeCurrentPage = (category) => {
   currentPage.value = category
   currentShowing.value = stores.filter((store) => store.category === currentPage.value)
@@ -43,6 +44,16 @@ const changeCurrentPage = (category) => {
             <i class="bx bx-bowl-rice"></i>
             <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2">主食 {{ foodCount }}</span>
           </li>
+          <li
+            class="inline-flex items-center text-center p-2 rounded-lg"
+            @click="changeCurrentPage('小吃')"
+            :class="currentPage == '小吃' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
+          >
+            <i class="bx bx-bowl-rice"></i>
+            <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"
+              >小吃 {{ snackCount }}</span
+            >
+          </li>
           <li>
             <div
               class="flex items-center text-center p-2 rounded-lg"
@@ -64,18 +75,6 @@ const changeCurrentPage = (category) => {
               <i class="bx bx-layer"></i>
               <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"
                 >甜品 {{ otherCount }}</span
-              >
-            </div>
-          </li>
-          <li>
-            <div
-              class="flex items-center text-center p-2 rounded-lg"
-              @click="changeCurrentPage('游戏')"
-              :class="currentPage == '游戏' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
-            >
-              <i class="bx bxs-invader"></i>
-              <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"
-                >游戏 {{ gameCount }}</span
               >
             </div>
           </li>
