@@ -9,7 +9,6 @@ const drinkCount = ref(stores.filter((store) => store.category === '饮料').len
 const gameCount = ref(stores.filter((store) => store.category === '游戏').length)
 const otherCount = ref(stores.filter((store) => store.category === '甜品').length)
 
-console.log(stores)
 const currentPage = ref('主食')
 const currentShowing = ref(stores.filter((store) => store.category === currentPage.value))
 const changeCurrentPage = (category) => {
@@ -82,9 +81,11 @@ const changeCurrentPage = (category) => {
       </nav>
 
       <div class="-my-4 divide-y divide-gray-200" data-aos="zoom-in">
-        <ul class="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start py-8 lg:px-0 px-4">
+        <ul
+          class="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-y-10 gap-x-6 items-start py-8 lg:px-0 px-4"
+        >
           <li
-            class="relative flex flex-col sm:flex-row xl:flex-col items-start animate-[fadeIn_2s_ease]"
+            class="relative flex flex-col sm:flex-row xl:flex-col items-start animate-[fadeIn_2s_ease] bg-slate-200 py-8 px-6 rounded-lg"
             v-for="item in currentShowing"
           >
             <div class="order-1 sm:ml-6 xl:ml-0">
@@ -92,8 +93,14 @@ const changeCurrentPage = (category) => {
                 <span class="mb-1 block text-2xl leading-6 text-indigo-500">{{ item.name }}</span
                 >{{ item.venue }}
               </h2>
-              <div class="prose prose-slate prose-sm text-xl text-slate-600">
-                <p>{{ item.description }}</p>
+              <div class="prose prose-slate prose-sm text-lg text-slate-600">
+                <p>
+                  {{
+                    item.description.length > 100
+                      ? `${item.description.slice(0, -(item.description.length - 100))}...`
+                      : item.description
+                  }}
+                </p>
               </div>
               <a
                 v-if="item.link"
@@ -115,17 +122,15 @@ const changeCurrentPage = (category) => {
                 ></a
               >
             </div>
-            <iframe
-              class="mb-6 shadow-md rounded-lg bg-slate-50 w-full sm:w-[17rem] sm:mb-0 xl:mb-6 xl:w-full"
-              width="400"
-              height="200"
+            <img
+              class="mb-6 rounded-lg w-full sm:w-[10rem] sm:mb-0 xl:mb-6 xl:w-full"
+              width="200"
+              height="100"
               :src="item.video"
-              title="YouTube video player"
-              frameborder="0"
+              :key="item.video"
+              title="Store Poster"
               loading="lazy"
-              allow="encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            />
           </li>
         </ul>
       </div>
