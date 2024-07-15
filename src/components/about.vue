@@ -24,8 +24,8 @@ const { description, location, date, time, video } = defineProps({
           autoplay
           controls
         >
-        <source :src="video" type="video/webm">
-      </video>
+          <source :src="video" type="video/webm" />
+        </video>
       </div>
       <div class="mt-4 md:mt-0" data-aos="fade in">
         <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">
