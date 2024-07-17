@@ -10,11 +10,11 @@ defineProps({
   <section class="antialiased" id="special-events">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:px-6 sm:py-16 lg:py-24">
       <div class="max-w-6xl mx-auto sm:text-left text-center" data-aos="fade-up">
-        <h1 class="text-5xl font-extrabold leading-tight tracking-tight text-gray-900">特殊节目</h1>
+        <h1 class="text-5xl font-extrabold leading-tight tracking-tight text-gray-900">乐队表演</h1>
         <h1
           class="mb-4 text-2xl sm:text-left tracking-tight font-extrabold text-gray-900 text-center"
         >
-          Special Events
+          Band Performance
         </h1>
         <div class="mt-4">节目表会有所更改，敬请留意</div>
       </div>

@@ -21,7 +21,6 @@ const { description, location, date, time, video } = defineProps({
           referrerpolicy="no-referrer-when-downgrade"
           allow="encrypted-media; picture-in-picture; web-share"
           allowfullscreen
-          autoplay
           controls
         >
           <source :src="video" type="video/webm" />
@@ -41,7 +40,7 @@ const { description, location, date, time, video } = defineProps({
         </div>
         <div class="flex justify-left">
           <a
-            href="https://www.instagram.com//"
+            href="https://www.instagram.com/clphs_2024canteenday/"
             target="_blank"
             aria-label="Instagram"
             title="Instagram"
@@ -61,7 +60,7 @@ const { description, location, date, time, video } = defineProps({
             </svg>
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/clphs_2024canteenday/"
             class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm px-5 py-2.5 text-center"
           >
             关注我们

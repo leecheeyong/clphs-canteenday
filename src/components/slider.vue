@@ -29,6 +29,7 @@ import Map from './map.vue'
 import Stores from './stores.vue'
 import Sponsor from './sponsor.vue'
 import Guide from './guide.vue'
+import Schedule from './schedule.vue'
 </script>
 <template>
   <div class="absolute top-[100vh] w-full bg-[#d7d6d6]" id="about">
