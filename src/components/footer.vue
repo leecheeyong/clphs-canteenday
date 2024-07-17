@@ -19,7 +19,13 @@ const date = new Date().getFullYear()
           ><i class="bx bxl-instagram"></i
         ></a>
       </span>
-      <span class="block text-xs text-gray-500 sm:text-center font-sans">Canteen Day © 2024</span>
+      <a
+          href="https://github.com/leecheeyong/clphs-canteenday"
+          title="Project License"
+          target="_blank"
+          class="hover:underline"
+          >the MIT License</a
+        ><span class="block text-xs text-gray-500 sm:text-center font-sans">Canteen Day © 2024</span></a>
       <span class="block text-xs text-gray-500 sm:text-center font-sans"
         >This project is available as an open source under the terms of
         <a

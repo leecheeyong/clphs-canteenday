@@ -160,7 +160,11 @@ onMounted(() => {
               >
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a href="#about" class="text-xl text-gray-800 font-semibold leading-6 animate-pulse"
+              <a
+                href="#about"
+                aria-label="Learn more"
+                title="Learn More"
+                class="text-xl text-gray-800 font-semibold leading-6 animate-pulse"
                 ><span aria-hidden="true" class="md:inline-block hidden">开始探索之乘 →</span
                 ><span aria-hidden="true" class="animate-bounce mt-20 inline-block md:hidden"
                   >向上滑以探索更多 ↑</span
