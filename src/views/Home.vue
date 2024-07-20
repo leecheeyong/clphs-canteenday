@@ -35,15 +35,17 @@ onMounted(() => {
     }
   }, 4000)
 })
-var ua = window.navigator.userAgent.toLowerCase().includes("safari")
-
+var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
   <div class="fixed scroll-smooth">
     <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos">
       <video autoplay muted loop class="top-0 w-screen h-screen z-0 object-cover opacity-60">
-        <source :src="ua ? video.src+'.mp4' : video.src+'.webm'" :type="ua ? 'video/mp4' : 'video/webm'" />
+        <source
+          :src="ua ? video.src + '.mp4' : video.src + '.webm'"
+          :type="ua ? 'video/mp4' : 'video/webm'"
+        />
       </video>
     </div>
     <header class="absolute inset-x-0 top-0 z-50 text-white">
