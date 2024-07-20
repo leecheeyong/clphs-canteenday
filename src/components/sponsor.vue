@@ -29,7 +29,7 @@ defineProps({
           />
           <img
             :alt="sponsor.name"
-            src="/user.png"
+            src="/user.webp"
             loading="lazy"
             class="w-24 h-24 rounded-full opacity-60"
             v-else

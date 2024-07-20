@@ -18,6 +18,7 @@ const { description, location, date, time, video } = defineProps({
           title="Official Canteen Day 2024 Introduction Video"
           frameborder="0"
           loading="lazy"
+          poster="/genius.webp"
           referrerpolicy="no-referrer-when-downgrade"
           allow="encrypted-media; picture-in-picture; web-share"
           allowfullscreen

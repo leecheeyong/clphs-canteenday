@@ -1,5 +1,5 @@
 import './assets/main.css'
-import 'boxicons'
+import 'boxicons/css/boxicons.min.css'
 
 import { createRouter, createWebHistory } from 'vue-router'
 import { createApp, defineAsyncComponent } from 'vue'

@@ -53,14 +53,14 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
         <div class="lg:flex lg:flex-1 lg:justify-center">
           <div class="flex items-center justify-center gap-6">
             <a href="/" aria-label="Back to home" title="Home">
-              <img class="h-12 w-auto" src="/Logo.png" alt="" />
+              <img class="h-12 w-auto" src="/Logo.webp" alt="" />
             </a>
             <h1
               class="sm:text-2xl text-xl bg-pink-400 p-2 pl-4 pr-4 rounded-3xl text-white shadow-md shadow-gray"
             >
               <span class="type-title font-bold"></span>
             </h1>
-            <img class="h-12 w-auto" src="/school.png" alt="" />
+            <img class="h-12 w-auto" src="/school.webp" alt="" />
           </div>
         </div>
       </nav>

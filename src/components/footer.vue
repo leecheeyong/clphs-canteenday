@@ -13,7 +13,7 @@ const date = new Date().getFullYear()
           aria-label="Chung Ling Private High School Website"
           title="Chung Ling Private High School"
           class="pb-1 px-1"
-          ><span class="bg-[url('/school.png')] w-6 h-6 block bg-contain"></span
+          ><span class="bg-[url('/school.webp')] w-6 h-6 block bg-contain"></span
         ></a>
         <a href="https://instagram.com/clphs_2024canteenday" target="_blank" title="Instagram"
           ><i class="bx bxl-instagram"></i
@@ -25,7 +25,7 @@ const date = new Date().getFullYear()
         target="_blank"
         class="hover:underline"
       >
-        ><span class="block text-xs text-gray-500 sm:text-center font-sans"
+        <span class="block text-xs text-gray-500 sm:text-center font-sans"
           >Canteen Day © 2024</span
         ></a
       >
