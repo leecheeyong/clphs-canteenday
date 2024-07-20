@@ -17,5 +17,5 @@ Chung Ling Private High School Canteenday 2024 Landing Page
   <summary>
 <h2>Demo</h2>
   </summary>
-<img width="186" alt="image" src="./preview.png">
+<img width="186" alt="image" src="./preview.webp">
 </details>
