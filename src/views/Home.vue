@@ -36,7 +36,6 @@ onMounted(() => {
   }, 4000)
 })
 var ua = window.navigator.userAgent.toLowerCase().includes("safari")
-console.log(ua)
 </script>
 
 <template>
