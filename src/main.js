@@ -1,5 +1,5 @@
 import './assets/main.css'
-import 'preline/preline'
+import 'boxicons'
 
 import { createRouter, createWebHistory } from 'vue-router'
 import { createApp, defineAsyncComponent } from 'vue'
