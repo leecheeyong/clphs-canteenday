@@ -18,7 +18,7 @@ export default {
       }
   },
   },
-  plugins: [require('preline/plugin'), require('tailwind-typewriter')({
+  plugins: [require('tailwind-typewriter')({
     wordsets: {
         title: {
             words: ["Little Western", "《西域小调》"],
