@@ -2,7 +2,7 @@
   <RouterView v-slot="{ Component }">
     <template v-if="Component">
       <KeepAlive>
-        <Suspense>
+        <Suspense timeout="0">
           <!-- main content -->
           <component :is="Component"></component>
 

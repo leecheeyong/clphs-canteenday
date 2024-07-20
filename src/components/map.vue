@@ -21,10 +21,10 @@ const { map } = defineProps({ map: String })
       </div>
       <main class="flex justify-center px-2 lg:px-4 py-4">
         <div
-          class="shadow-[0_45px_70px_-25px_rgba(0,0,0,0.4)] h-[200px] w-[400px] md:w-[600px] md:h-[400px] lg:w-[1200px] lg:h-[700px] rounded-lg"
+          class="shadow-[0_45px_70px_-25px_rgba(0,0,0,0.4)] h-[200px] w-[400px] md:w-[600px] md:h-[400px] lg:w-[1200px] lg:h-[700px]"
         >
           <img
-            class="w-full h-full object-cover rounded-lg"
+            class="w-full h-full rounded-lg"
             loading="lazy"
             v-if="map"
             :src="map"
