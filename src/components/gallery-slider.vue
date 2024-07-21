@@ -208,17 +208,13 @@ const changeCurrentPage = (category) => {
         #搞笑
       </button>
     </div>
-    <!-- <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:p-16 p-8">
-      <div class="w-full h-full" >
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 sm:p-16 p-8">
+      <div class="w-full h-full" v-for="image in currentShowing">
         <a :href="image.url">
-        <img
-          class="object-contain h-56 w-full rounded-lg bg-white/40"
-          :src="image.url"
-          alt=""
-        />
-      </a>
+          <img class="object-contain h-56 w-full rounded-lg bg-white/40" :src="image.url" alt="" />
+        </a>
       </div>
-    </div> -->
+    </div>
 
     <Footer />
   </div>
