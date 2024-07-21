@@ -1,68 +1,47 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import slider from '@/components/gallery-slider.vue'
-import Share from '@/components/share.vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-AOS.init()
-const currentVideo = ref(0)
+import Slider from '@/components/gallery-slider.vue'
 const mainInfo = ref({})
-
-mainInfo.value = await fetch('https://canteenday-2024.vercel.app/').then((r) => r.json())
-
-const videos = await fetch('https://canteenday-2024.vercel.app/images').then((r) => r.json())
-
-const {
-  description,
-  location,
-  date,
-  time,
-  video,
-  logo,
-  map,
-  disableGuide,
-  disableStores,
-  sponsorURL,
-  sponsors
-} = mainInfo.value
+mainInfo.value = await fetch('https://canteenday-2024.vercel.app/gallery').then((r) => r.json())
+const currentBackground = ref(0)
+const campaignBackground = mainInfo.value.filter((r) => r.category == 'BACKGROUND')
 
 onMounted(() => {
   setInterval(() => {
-    if (currentVideo.value !== videos.length - 1) {
-      currentVideo.value++
+    if (currentBackground.value !== campaignBackground.length - 1) {
+      currentBackground.value++
     } else {
-      currentVideo.value = 0
+      currentBackground.value = 0
     }
-  }, 4000)
+  }, 3000)
 })
-var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
   <div class="fixed scroll-smooth">
-    <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos">
+    <div
+      :class="index === currentBackground ? 'block' : 'hidden'"
+      v-for="(video, index) in campaignBackground"
+    >
       <video autoplay muted loop class="top-0 w-screen h-screen z-0 object-cover opacity-60">
-        <source
-          :src="ua ? video.src + '.mp4' : video.src + '.webm'"
-          :type="ua ? 'video/mp4' : 'video/webm'"
-        />
+        <source :src="video.url" />
       </video>
     </div>
     <header class="absolute inset-x-0 top-0 z-50 text-white">
       <nav class="flex items-center justify-center p-6 lg:px-8" aria-label="Global">
-        <div class="lg:flex lg:flex-1 lg:justify-center">
-          <div class="flex items-center justify-center gap-6">
-            <a href="/" aria-label="Back to home" title="Home">
+        <a href="/" aria-label="Back to home" title="Home">
+          <div class="lg:flex lg:flex-1 lg:justify-center">
+            <div class="flex items-center justify-center gap-6">
               <img class="h-12 w-auto" src="/Logo.webp" alt="" />
-            </a>
-            <h1
-              class="sm:text-2xl text-xl bg-pink-400 p-2 pl-4 pr-4 rounded-3xl text-white shadow-md shadow-gray"
-            >
-              <span class="type-title font-bold"></span>
-            </h1>
-            <img class="h-12 w-auto" src="/school.webp" alt="" />
+              <h1
+                class="sm:text-2xl text-xl bg-pink-400 p-2 pl-4 pr-4 rounded-3xl text-white shadow-md shadow-gray"
+              >
+                <span class="type-title font-bold"></span>
+              </h1>
+              <img class="h-12 w-auto" src="/school.webp" alt="" />
+            </div>
           </div>
-        </div>
+        </a>
       </nav>
       <div class="relative isolate px-6 pt-14 lg:px-8">
         <div class="mx-auto max-w-2xl py-32 sm:py-32 lg:py-32">
@@ -95,15 +74,17 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
             ></div>
           </div>
           <div class="text-center">
-            <div
-              v-for="(video, index) in videos"
-              :class="index === currentVideo ? 'block' : 'hidden'"
-            >
+            <div>
               <h1
                 class="tracking-tight bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-5xl md:text-6xl font-extrabold text-transparent text-center select-auto"
               >
-                {{ video.title }}
+                相册
               </h1>
+              <p
+                class="mt-3 tracking-tight bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl md:text-3xl font-extrabold text-transparent text-center select-auto"
+              >
+                Gallery
+              </p>
             </div>
             <div
               class="fixed inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -133,33 +114,14 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
                 "
               ></div>
             </div>
-            <p class="mt-16 text-md leading-8 text-gray-800 animate-fadeIn font-semibold">
-              <a
-                href="#guide"
-                class="hover:underline bg-blue-200/30 hover:bg-blue-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >指南</a
-              >
-              <a
-                href="#special-events"
-                class="hover:underline bg-purple-200/30 hover:bg-purple-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >乐队表演</a
-              >
-              <a
-                href="#stores"
-                class="hover:underline bg-green-200/30 hover:bg-green-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >摊位单</a
-              ><a
-                href="#map"
-                class="hover:underline bg-orange-200/30 hover:bg-orange-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >地图</a
-              >
-              <a
-                href="#sponsor"
-                class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >赞助商</a
-              >
-            </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
+              <router-link
+                to="/"
+                aria-label="Home"
+                title="Home"
+                class="text-xl text-gray-600 font-semibold leading-6"
+                ><span aria-hidden="true" class="md:inline-block hidden">← 主页</span></router-link
+              >
               <a
                 href="#about"
                 aria-label="Learn more"
@@ -204,17 +166,6 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
       </div>
     </header>
   </div>
-  <slider
-    :description="description"
-    :location="location"
-    :date="date"
-    :time="time"
-    :video="video"
-    :map="map"
-    :sponsorURL="sponsorURL"
-    :disableStores="disableStores"
-    :disableGuide="disableGuide"
-    :sponsors="sponsors"
-  />
+  <slider :mainInfo="mainInfo" />
   <Share />
 </template>
