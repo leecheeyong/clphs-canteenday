@@ -15,12 +15,12 @@ const routes = [
     path: '/:id',
     name: '404',
     component: () => import('@/views/404.vue')
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: () => import('@/views/Gallery.vue')
   }
-  // {
-  //   path: '/campaign',
-  //   name: '预热活动',
-  //   component: () => import('@/views/Campaign.vue')
-  // }
 ]
 
 const router = createRouter({
