@@ -139,6 +139,11 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
                 class="hover:underline bg-blue-200/30 hover:bg-blue-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >指南</a
               >
+              <router-link
+                to="/gallery#about"
+                class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
+                >相册</router-link
+              >
               <a
                 href="#special-events"
                 class="hover:underline bg-purple-200/30 hover:bg-purple-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
@@ -152,11 +157,6 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
                 href="#map"
                 class="hover:underline bg-orange-200/30 hover:bg-orange-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >地图</a
-              >
-              <a
-                href="#sponsor"
-                class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
-                >赞助商</a
               >
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
