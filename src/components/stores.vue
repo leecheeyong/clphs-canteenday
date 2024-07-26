@@ -91,7 +91,7 @@ const changeCurrentPage = (category) => {
             <div class="order-1 sm:ml-6 xl:ml-0">
               <h2 class="mb-1 text-slate-900 text-xl font-semibold">
                 <span class="mb-1 block text-2xl leading-6 text-indigo-500">{{ item.name }}</span
-                >{{ item.venue }}
+                ><a href="#map">{{ item.venue }}</a>
               </h2>
               <div class="prose prose-slate prose-sm text-lg text-slate-600">
                 <p>
