@@ -42,6 +42,7 @@ import Schedule from './schedule.vue'
     />
     <Guide v-if="disableGuide != 'TRUE'" />
     <Stores v-if="disableStores != 'TRUE'" />
+    <Schedule />
     <Map :map="map" />
     <Sponsor v-if="sponsorURL" :sponsorURL="sponsorURL" :sponsors="sponsors" />
     <Footer />

@@ -3,9 +3,6 @@ import { ref } from 'vue'
 import schedule from './schedule.vue'
 
 const guide = await fetch('https://canteenday-2024.vercel.app/guide').then((r) => r.json())
-const events = await fetch('https://canteenday-2024.vercel.app/special-events').then((r) =>
-  r.json()
-)
 </script>
 <template>
   <div class="flex justify-center" id="guide">
@@ -41,5 +38,4 @@ const events = await fetch('https://canteenday-2024.vercel.app/special-events').
       </div>
     </div>
   </div>
-  <schedule :schedule="events" />
 </template>
