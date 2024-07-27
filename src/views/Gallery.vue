@@ -18,12 +18,18 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="fixed scroll-smooth">
+  <div class="fixed !scroll-smooth">
     <div
       :class="index === currentBackground ? 'block' : 'hidden'"
       v-for="(video, index) in campaignBackground"
     >
-      <video autoplay muted loop class="top-0 w-screen h-screen z-0 object-cover opacity-60">
+      <video
+        autoplay
+        muted
+        loop
+        disablePictureInPicture
+        class="top-0 w-screen h-screen z-0 object-cover opacity-60"
+      >
         <source :src="video.url" />
       </video>
     </div>

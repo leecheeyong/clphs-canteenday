@@ -13,7 +13,7 @@ defineProps({
   >
     <div class="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
       <span class="font-semibold text-gray-400 uppercase"
-        >特别感谢赞助商们<br /><span class="font-sans">A SPECIAL THANKS TO</span></span
+        >特别感谢赞助商们<br /><span class="font-sans">SPECIAL THANKS TO</span></span
       >
       <div class="flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
         <div

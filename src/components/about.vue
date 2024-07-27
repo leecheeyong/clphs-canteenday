@@ -41,7 +41,7 @@ const { description, location, date, time, video } = defineProps({
         </div>
         <div class="flex justify-left">
           <router-link
-            to="/gallery"
+            to="/gallery#about"
             class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
           >
             <svg

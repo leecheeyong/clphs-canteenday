@@ -41,7 +41,13 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 <template>
   <div class="fixed scroll-smooth">
     <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos">
-      <video autoplay muted loop class="top-0 w-screen h-screen z-0 object-cover opacity-60">
+      <video
+        autoplay
+        muted
+        loop
+        disablePictureInPicture
+        class="top-0 w-screen h-screen z-0 object-cover opacity-60"
+      >
         <source
           :src="ua ? video.src + '.mp4' : video.src + '.webm'"
           :type="ua ? 'video/mp4' : 'video/webm'"
