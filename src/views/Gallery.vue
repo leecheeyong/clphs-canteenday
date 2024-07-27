@@ -18,7 +18,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="fixed !scroll-smooth">
+  <div class="fixed scroll-smooth">
     <div
       :class="index === currentBackground ? 'block' : 'hidden'"
       v-for="(video, index) in campaignBackground"

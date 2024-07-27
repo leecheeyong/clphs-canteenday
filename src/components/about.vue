@@ -17,7 +17,6 @@ const { description, location, date, time, video } = defineProps({
           class="w-full h-full border-0 rounded-lg"
           title="Official Canteen Day 2024 Introduction Video"
           frameborder="0"
-          loading="lazy"
           poster="/genius.webp"
           referrerpolicy="no-referrer-when-downgrade"
           allow="encrypted-media; picture-in-picture; web-share"
@@ -42,6 +41,7 @@ const { description, location, date, time, video } = defineProps({
         <div class="flex justify-left">
           <router-link
             to="/gallery#about"
+            title="View Gallery"
             class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
           >
             <svg

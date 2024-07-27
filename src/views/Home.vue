@@ -142,39 +142,44 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
             <p class="mt-16 text-md leading-8 text-gray-800 animate-fadeIn font-semibold">
               <a
                 href="#guide"
+                title="Guide"
                 class="hover:underline bg-blue-200/30 hover:bg-blue-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >指南</a
               >
               <router-link
                 to="/gallery#about"
+                title="Gallery"
                 class="hover:underline bg-pink-200/30 hover:bg-pink-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >相册</router-link
               >
               <a
                 href="#special-events"
+                title="Band Performance"
                 class="hover:underline bg-purple-200/30 hover:bg-purple-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >乐队表演</a
               >
               <a
                 href="#stores"
+                title="Stores"
                 class="hover:underline bg-green-200/30 hover:bg-green-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >摊位单</a
               ><a
                 href="#map"
+                title="Map"
                 class="hover:underline bg-orange-200/30 hover:bg-orange-200/60 rounded-lg p-4 py-2 md:inline-block hidden mx-1"
                 >地图</a
               >
             </p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#about"
+              <router-link
+                to="#about"
                 aria-label="Learn more"
                 title="Learn More"
                 class="text-xl text-gray-800 font-semibold leading-6 animate-pulse"
                 ><span aria-hidden="true" class="md:inline-block hidden">开始探索之乘 →</span
                 ><span aria-hidden="true" class="animate-bounce mt-20 inline-block md:hidden"
                   >向上滑以探索更多 ↑</span
-                ></a
+                ></router-link
               >
             </div>
           </div>
