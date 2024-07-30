@@ -177,6 +177,6 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
       </div>
     </header>
   </div>
-  <slider :mainInfo="mainInfo" />
   <Share />
+  <slider :mainInfo="mainInfo" />
 </template>
