@@ -19,7 +19,11 @@ const schedule = await fetch('https://canteenday-2024.vercel.app/special-events'
         class="gap-8 items-center py-8 px-8 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 sm:py-8 lg:px-6"
       >
         <div data-aos="fade in">
-          <img src="/poster/band.webp" alt="Band Performance" class="h-1/2 mr-8 rounded-lg" />
+          <img
+            src="/poster/band.webp"
+            alt="Band Performance"
+            class="mr-8 rounded-lg object-cover"
+          />
         </div>
         <div class="flow-root max-w-6xl lg:px-0 px-4 mx-auto mt-6">
           <div class="-my-4 divide-y divide-gray-200" data-aos="zoom-in">
