@@ -15,6 +15,7 @@ onMounted(() => {
     }
   }, 3000)
 })
+var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
@@ -31,7 +32,10 @@ onMounted(() => {
         disablePictureInPicture
         class="top-0 w-screen h-screen z-0 object-cover opacity-60"
       >
-        <source :src="video.url" />
+        <source
+          :src="ua ? video.src + '.mp4' : video.src + '.webm'"
+          :type="ua ? 'video/mp4' : 'video/webm'"
+        />
       </video>
     </div>
     <header class="absolute inset-x-0 top-0 z-50 text-white">
