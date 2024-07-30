@@ -33,7 +33,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
         class="top-0 w-screen h-screen z-0 object-cover opacity-60"
       >
         <source
-          :src="ua ? video.src + '.mp4' : video.src + '.webm'"
+          :src="ua ? video.url + '.mp4' : video.url + '.webm'"
           :type="ua ? 'video/mp4' : 'video/webm'"
         />
       </video>
