@@ -1,5 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+import Share from '@/components/share.vue'
 import Slider from '@/components/gallery-slider.vue'
 const mainInfo = ref({})
 mainInfo.value = await fetch('https://canteenday-2024.vercel.app/gallery').then((r) => r.json())
