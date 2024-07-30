@@ -27,6 +27,7 @@ onMounted(() => {
         autoplay
         muted
         loop
+        playsinline
         disablePictureInPicture
         class="top-0 w-screen h-screen z-0 object-cover opacity-60"
       >
