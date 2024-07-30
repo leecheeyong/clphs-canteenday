@@ -21,6 +21,7 @@ const { description, location, date, time, video } = defineProps({
           referrerpolicy="no-referrer-when-downgrade"
           allow="encrypted-media; picture-in-picture; web-share"
           allowfullscreen
+          playsinline
           controls
         >
           <source :src="video" type="video/webm" />
