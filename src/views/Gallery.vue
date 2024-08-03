@@ -21,10 +21,11 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 
 <template>
   <div class="fixed scroll-smooth">
-    <div
+    <!-- <div
       :class="index === currentBackground ? 'block' : 'hidden'"
       v-for="(video, index) in campaignBackground"
-    >
+    > -->
+    <div>
       <video
         autoplay
         muted
@@ -34,7 +35,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
         class="top-0 w-screen h-screen z-0 object-cover opacity-60"
       >
         <source
-          :src="ua ? video.url + '.mp4' : video.url + '.webm'"
+          :src="ua ? campaignBackground[0].url + '.mp4' : campaignBackground[0].url + '.webm'"
           :type="ua ? 'video/mp4' : 'video/webm'"
         />
       </video>

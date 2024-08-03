@@ -40,7 +40,8 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 
 <template>
   <div class="fixed scroll-smooth">
-    <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos">
+    <!-- <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos"> -->
+    <div>
       <video
         autoplay
         muted
@@ -50,7 +51,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
         class="top-0 w-screen h-screen z-0 object-cover opacity-60"
       >
         <source
-          :src="ua ? video.src + '.mp4' : video.src + '.webm'"
+          :src="ua ? videos[0].src + '.mp4' : videos[0].src + '.webm'"
           :type="ua ? 'video/mp4' : 'video/webm'"
         />
       </video>
@@ -107,7 +108,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
               :class="index === currentVideo ? 'block' : 'hidden'"
             >
               <h1
-                class="tracking-tight bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-5xl md:text-6xl font-extrabold text-transparent text-center select-auto"
+                class="tracking-tight bg-gradient-to-r items-center from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-2xl md:text-5xl font-extrabold text-transparent text-center select-auto"
               >
                 {{ video.title }}
               </h1>

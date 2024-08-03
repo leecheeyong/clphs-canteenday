@@ -1,9 +1,6 @@
 <script setup>
-const { description, location, date, time, video } = defineProps({
+const { description, video } = defineProps({
   description: String,
-  location: String,
-  date: String,
-  time: String,
   video: String
 })
 </script>
@@ -35,7 +32,7 @@ const { description, location, date, time, video } = defineProps({
         </p>
         <div class="relative mb-6 max-w-sm text-left text-gray-400">
           <p class="text-left pt-8 text-xl leading-8 sm:text-[24px]">
-            地点：{{ location }}<br />日期：{{ date }}<br />时间：{{ time }}
+            地点：锺灵独立中学<br />日期：2024年8月2日 (星期五）<br />时间：8:00am至2.00pm
           </p>
         </div>
         <div class="flex justify-left">
