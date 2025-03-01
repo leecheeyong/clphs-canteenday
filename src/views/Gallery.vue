@@ -2680,7 +2680,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
-  <div class="cursor" ref="cursor"></div>
+  <div class="cursor hidden lg:block" ref="cursor"></div>
   <div class="fixed scroll-smooth">
     <!-- <div
       :class="index === currentBackground ? 'block' : 'hidden'"

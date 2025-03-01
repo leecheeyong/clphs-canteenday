@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="cursor" ref="cursor"></div>
+  <div class="cursor hidden lg:block" ref="cursor"></div>
   <main class="grid min-h-full place-items-center bg-white px-6 py-44 sm:py-32 lg:px-8">
     <div class="text-center">
       <p class="text-xl font-mono font-semibold text-indigo-600">404 Not Found</p>
