@@ -12,11 +12,11 @@ const date = new Date().getFullYear()
           target="_blank"
           aria-label="Chung Ling Private High School Website"
           title="Chung Ling Private High School"
-          class="pb-1 px-1"
+          class="pb-1 px-1 hover:scale-[1.1] ease-in-out transition"
           ><span class="bg-[url('/school.webp')] w-6 h-6 block bg-contain"></span
         ></a>
         <a href="https://instagram.com/clphs_2024canteenday" target="_blank" title="Instagram"
-          ><i class="bx bxl-instagram"></i
+          ><i class="bx bxl-instagram hover:scale-[1.1] ease-in-out transition"></i
         ></a>
       </span>
       <a

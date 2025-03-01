@@ -7,6 +7,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  cursor: none;
+  scroll-behavior: smooth;
 }
 
 .animate-marquee {
@@ -52,4 +54,44 @@ body {
   .hide-skills {
     transition: none;
   }
+}
+/* Floating Effect */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Hover Pop Effect */
+.hover-pop {
+  transition: transform 0.3s ease;
+}
+.hover-pop:hover {
+  transform: scale(1.05);
+}
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: rgba(100, 99, 99, 0.452);
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(83, 83, 83, 0.671);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 60;
+  transition: transform 0.1s ease-out;
+}
+a,
+button,
+div,
+li {
+  cursor: none;
 }

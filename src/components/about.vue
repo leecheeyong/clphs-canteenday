@@ -39,7 +39,7 @@ const { description, video } = defineProps({
           <router-link
             to="/gallery#about"
             title="View Gallery"
-            class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
+            class="hover:scale-[1.1] ease-in-out transition inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const { description, video } = defineProps({
             target="_blank"
             aria-label="Instagram"
             title="Instagram"
-            class="inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
+            class="hover:scale-[1.1] ease-in-out transition inline-flex items-center text-white bg-primary-700 hover:bg-primary-800 font-medium border-0 text-sm py-2 text-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
