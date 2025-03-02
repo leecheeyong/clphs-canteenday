@@ -246,7 +246,7 @@ const changeCurrentPage = (category) => {
         :class="
           currentPage == '食堂日'
             ? 'text-blue-700 focus:ring-blue-300 border dark:border-blue-500 dark:text-blue-500 border-blue-600  dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-            : 'cursor-pointer hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
+            : 'hover:scale-[1.1] ease-in-out transition hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
         "
       >
         #食堂日
@@ -258,7 +258,7 @@ const changeCurrentPage = (category) => {
         :class="
           currentPage == '试吃会'
             ? 'text-blue-700 focus:ring-blue-300 border dark:border-blue-500 dark:text-blue-500 border-blue-600  dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-            : 'cursor-pointer hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
+            : 'hover:scale-[1.1] ease-in-out transition hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
         "
       >
         #试吃会
@@ -270,7 +270,7 @@ const changeCurrentPage = (category) => {
         :class="
           currentPage == '乐队'
             ? 'text-blue-700 focus:ring-blue-300 border dark:border-blue-500 dark:text-blue-500 border-blue-600  dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-            : 'cursor-pointer hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
+            : 'hover:scale-[1.1] ease-in-out transition hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
         "
       >
         #乐队
@@ -282,7 +282,7 @@ const changeCurrentPage = (category) => {
         :class="
           currentPage == '预热活动'
             ? 'text-blue-700 focus:ring-blue-300 border dark:border-blue-500 dark:text-blue-500 border-blue-600  dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-            : 'cursor-pointer hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
+            : 'hover:scale-[1.1] ease-in-out transition hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
         "
       >
         #预热活动
@@ -294,7 +294,7 @@ const changeCurrentPage = (category) => {
         :class="
           currentPage == '筹备'
             ? 'text-blue-700 focus:ring-blue-300 border dark:border-blue-500 dark:text-blue-500 border-blue-600  dark:hover:text-white dark:hover:bg-blue-500 dark:bg-gray-900 dark:focus:ring-blue-800'
-            : 'cursor-pointer hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
+            : 'hover:scale-[1.1] ease-in-out transition hover:bg-blue-700 hover:text-white dark:text-white focus:ring-gray-300  dark:focus:ring-gray-800 text-gray-900 border border-white hover:border-gray-200 dark:border-gray-900 dark:bg-gray-900 dark:hover:border-gray-700'
         "
       >
         #筹备

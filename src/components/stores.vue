@@ -38,7 +38,11 @@ const changeCurrentPage = (category) => {
           <li
             class="inline-flex items-center text-center p-2 rounded-lg"
             @click="changeCurrentPage('主食')"
-            :class="currentPage == '主食' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
+            :class="
+              currentPage == '主食'
+                ? 'bg-pink-200 animate-fadeIn'
+                : 'hover:scale-[1.1] ease-in-out transition'
+            "
           >
             <i class="bx bx-bowl-rice"></i>
             <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2">主食 {{ foodCount }}</span>
@@ -46,7 +50,11 @@ const changeCurrentPage = (category) => {
           <li
             class="inline-flex items-center text-center p-2 rounded-lg"
             @click="changeCurrentPage('小吃')"
-            :class="currentPage == '小吃' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
+            :class="
+              currentPage == '小吃'
+                ? 'bg-pink-200 animate-fadeIn'
+                : 'hover:scale-[1.1] ease-in-out transition'
+            "
           >
             <i class="bx bx-bowl-rice"></i>
             <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"
@@ -57,7 +65,11 @@ const changeCurrentPage = (category) => {
             <div
               class="flex items-center text-center p-2 rounded-lg"
               @click="changeCurrentPage('饮料')"
-              :class="currentPage == '饮料' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
+              :class="
+                currentPage == '饮料'
+                  ? 'bg-pink-200 animate-fadeIn'
+                  : 'hover:scale-[1.1] ease-in-out transition'
+              "
             >
               <i class="bx bx-drink"></i>
               <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"
@@ -69,7 +81,11 @@ const changeCurrentPage = (category) => {
             <div
               class="flex items-center text-center p-2 rounded-lg"
               @click="changeCurrentPage('甜品')"
-              :class="currentPage == '甜品' ? 'bg-pink-200 animate-fadeIn' : 'cursor-pointer'"
+              :class="
+                currentPage == '甜品'
+                  ? 'bg-pink-200 animate-fadeIn'
+                  : 'hover:scale-[1.1] ease-in-out transition'
+              "
             >
               <i class="bx bx-layer"></i>
               <span class="ms-1 text-xl font-medium text-gray-500 md:ms-2"

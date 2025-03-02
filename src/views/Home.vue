@@ -7,10 +7,50 @@ import 'aos/dist/aos.css'
 AOS.init()
 const currentVideo = ref(0)
 const mainInfo = ref({})
+const cursor = ref(null)
 
-mainInfo.value = await fetch('https://canteenday-2024.vercel.app/').then((r) => r.json())
+//mainInfo.value = await fetch('https://canteenday-2024.vercel.app/').then((r) => r.json())
+mainInfo.value = {
+  logo: './Logo.webp',
+  description:
+    '为了筹募锺灵校友会奖助学金基金及锺灵独中奖助学金基金，本校统考高中二班及国际中五\n班的同学将每年举办食堂义卖日。此活动也将会给予统考高中二班及国际中五\n班的同学一次难忘的体验。',
+  location: '锺灵独立中学',
+  date: '8月2日 (星期五）',
+  time: '8:00am至2.00pm ',
+  video: './slideshow/trailer.webm',
+  personInCharge: '',
+  contact: '',
+  email: '',
+  map: './map.webp',
+  disableGuide: 'FALSE',
+  disableStores: 'FALSE',
+  sponsorURL: '#',
+  sponsors: [
+    { name: 'Food Culture Resources', image: './edc-sponsor.webp' },
+    { name: 'HVAC Engineering SDN BHD', image: 'hvac-sponsor.webp' }
+  ],
+  campaignVideo: 'https://www.youtube-nocookie.com/embed/ge3GT8_un6s',
+  campaignBackground: ['/demo.webm', '/demo1.mp4'],
+  campaignEvents: [
+    { day: '第一天', title: '噼里啪啦' },
+    { day: '第二天', title: '平龙庞郎' },
+    { day: '第三天', title: '吃哪个瓜' }
+  ],
+  campaignLocation: '学校大厅',
+  campaignImages: [
+    '/image.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
+    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
+    '/image.jpg'
+  ]
+}
 
-const videos = await fetch('https://canteenday-2024.vercel.app/images').then((r) => r.json())
+//const videos = await fetch('https://canteenday-2024.vercel.app/images').then((r) => r.json())
+const videos = [
+  { title: '第63届食堂义卖日圆满结束', src: './slideshow/recap' },
+  { title: '感谢所有参与者' },
+  { title: '对本届食堂义卖日的支持' }
+]
 
 const {
   description,
@@ -27,6 +67,9 @@ const {
 } = mainInfo.value
 
 onMounted(() => {
+  document.addEventListener('mousemove', (e) => {
+    cursor.value.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+  })
   setInterval(() => {
     if (currentVideo.value !== videos.length - 1) {
       currentVideo.value++
@@ -39,6 +82,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
+  <div class="cursor hidden lg:block" ref="cursor"></div>
   <div class="fixed scroll-smooth">
     <!-- <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos"> -->
     <div>
@@ -177,7 +221,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
                 to="#about"
                 aria-label="Learn more"
                 title="Learn More"
-                class="text-xl text-gray-800 font-semibold leading-6 animate-pulse"
+                class="hover:scale-[1.1] ease-in-out transition text-xl text-gray-800 font-semibold leading-6 animate-pulse"
                 ><span aria-hidden="true" class="md:inline-block hidden">开始探索之乘 →</span
                 ><span aria-hidden="true" class="animate-bounce mt-20 inline-block md:hidden"
                   >向上滑以探索更多 ↑</span
