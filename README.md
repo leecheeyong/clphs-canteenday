@@ -19,3 +19,13 @@ Chung Ling Private High School Canteenday 2024 Landing Page
   </summary>
 <img width="186" alt="image" src="./preview.webp">
 </details>
+
+<details>
+  <summary>
+<h2>Credits</h2>
+  </summary>
+### Committee Members
+A special thanks to the following individuals for their support and involvement in organizing the event:
+- 蔡咏恩，吴勇进，李志勇，林祖汶，尤浚轩 ，骆慷汝，王慧莉，郭子恒，余鎧璇，翁沂款，陈迦亿，涂铭熙，许应定，林奕翔，王力宏，张宇皓，江饮虹，刘健义，陈贤恩，蔡铭泓，李樟柔，洪莹曦，邱鼎立，江鎵亨，张珞诗，林環彤，傳宣杏，陈宜良，苏俊熙，幸恰，邱梓茵，郑建佐，张泽恩，张索诚，黄哲熏，王诗淇，陈奕纱
+
+</details>
