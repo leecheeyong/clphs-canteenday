@@ -15,11 +15,11 @@ async function share() {
     await navigator.share({
       title: 'Canteen Day 2024',
       text: '食堂日2024',
-      url: 'https://canteenday.tech'
+      url: 'https://canteenday.vercel.app'
     })
   } catch (e) {
     window.open(
-      'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcanteenday.tech',
+      'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcanteenday.vercel.app',
       '_blank'
     )
   }

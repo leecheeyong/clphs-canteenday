@@ -1,7 +1,23 @@
 <script setup>
-const schedule = await fetch('https://canteenday-2024.vercel.app/special-events').then((r) =>
-  r.json()
-)
+// const schedule = await fetch('https://canteenday-2024.vercel.app/special-events').then((r) =>
+//   r.json()
+// )
+const schedule = [
+  { time: '8.30-8.40am', venue: '小讲堂（一）', title: 'Sunny Days - Wave To Earth' },
+  { time: '8.50-9.00am', venue: '小讲堂（一）', title: 'Light -  Wave To Earth' },
+  { time: '9.00-9.10am', venue: '小讲堂（一）', title: '不愿让你一个人 - 五月天' },
+  { time: '9.10-9.20am', venue: '小讲堂（一）', title: '后来的我们 - 五月天' },
+  { time: '9.20-9.30am', venue: '小讲堂（一）', title: '⁠步步 - 五月天' },
+  { time: '9.30-9.40am', venue: '小讲堂（一）', title: '⁠鲜花 - 回春丹' },
+  { time: '9.40-9.50am', venue: '小讲堂（一）', title: '⁠爱人错过 - 告五人' },
+  { time: '9.50-10.00am', venue: '小讲堂（一）', title: '⁠鱼仔 - crowdlu' },
+  { time: '10.00-10.10am', venue: '小讲堂（一）', title: 'Seasons - Wave To Earth' },
+  { time: '10.10-10.20am', venue: '小讲堂（一）', title: '如果可以' },
+  { time: '10.20-10.30am', venue: '小讲堂（一）', title: '刻在我心底的名字' },
+  { time: '11.00-11.10am', venue: '小讲堂（一）', title: '蒲公英的约定' },
+  { time: '11.10-11.20am', venue: '小讲堂（一）', title: '小幸运' },
+  { time: '11.20-11.30am', venue: '小讲堂（一）', title: '乌梅子酱' }
+]
 </script>
 <template>
   <section class="antialiased" id="special-events">

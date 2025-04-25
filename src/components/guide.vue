@@ -2,7 +2,49 @@
 import { ref } from 'vue'
 import schedule from './schedule.vue'
 
-const guide = await fetch('https://canteenday-2024.vercel.app/guide').then((r) => r.json())
+// const guide = await fetch('https://canteenday-2024.vercel.app/guide').then((r) => r.json())
+const guide = [
+  {
+    title: '固本',
+    icon: 'bx-shopping-bag',
+    content: [
+      '食堂日当天，固本将会在大礼堂&第三通道处售卖',
+      '食堂日当天，购买食物或参与活动只能使用固本',
+      '固本不找零钱，请携带准确的固本金额前往各摊位',
+      '概不退还一切固本（包括食堂日结束后未使用的固本）'
+    ]
+  },
+  {
+    title: '随身手册',
+    icon: 'bx-spreadsheet',
+    content: [
+      '参与者们将会领取一张随身手册',
+      '该随身手册会包含活动地图及特殊活动介绍',
+      '参与者们可以把收集到的帖子贴在帖子收集区',
+      '获得了足够的帖子后可领换取礼物'
+    ]
+  },
+  {
+    title: '游戏',
+    icon: 'bxs-basketball',
+    content: [
+      '游戏摊位将处在大礼堂及篮球场',
+      '参与者们会在赢取游戏后得到一个帖子/盖章',
+      '筹集了10个盖章/帖子后可在大礼堂/篮球场入口处换取礼物',
+      '礼物将以抽签方式进行'
+    ]
+  },
+  {
+    title: '幸运抽奖',
+    icon: 'bx-gift',
+    content: [
+      '幸运抽奖分为教职员奖，学生奖及班级奖',
+      '奖项分为一等，二等，三等奖，幸运奖及特别奖',
+      '抽奖必须是本校师生或相关人员',
+      '有多余的固本也可以在固本背面填写姓名，班级/教职员部门，及学号'
+    ]
+  }
+]
 </script>
 <template>
   <div class="flex justify-center" id="guide">

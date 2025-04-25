@@ -2665,9 +2665,9 @@ const campaignBackground = mainInfo.value.filter((r) => r.category == 'BACKGROUN
 const cursor = ref(null)
 
 onMounted(() => {
-  document.addEventListener('mousemove', (e) => {
-    cursor.value.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
-  })
+  // document.addEventListener('mousemove', (e) => {
+  //   cursor.value.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+  // })
   setInterval(() => {
     if (currentBackground.value !== campaignBackground.length - 1) {
       currentBackground.value++
@@ -2680,7 +2680,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
-  <div class="cursor hidden lg:block" ref="cursor"></div>
+  <!-- <div class="cursor hidden lg:block" ref="cursor"></div> -->
   <div class="fixed scroll-smooth">
     <!-- <div
       :class="index === currentBackground ? 'block' : 'hidden'"

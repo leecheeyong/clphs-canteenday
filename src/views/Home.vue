@@ -18,9 +18,6 @@ mainInfo.value = {
   date: '8月2日 (星期五）',
   time: '8:00am至2.00pm ',
   video: './slideshow/trailer.webm',
-  personInCharge: '',
-  contact: '',
-  email: '',
   map: './map.webp',
   disableGuide: 'FALSE',
   disableStores: 'FALSE',
@@ -28,20 +25,6 @@ mainInfo.value = {
   sponsors: [
     { name: 'Food Culture Resources', image: './edc-sponsor.webp' },
     { name: 'HVAC Engineering SDN BHD', image: 'hvac-sponsor.webp' }
-  ],
-  campaignVideo: 'https://www.youtube-nocookie.com/embed/ge3GT8_un6s',
-  campaignBackground: ['/demo.webm', '/demo1.mp4'],
-  campaignEvents: [
-    { day: '第一天', title: '噼里啪啦' },
-    { day: '第二天', title: '平龙庞郎' },
-    { day: '第三天', title: '吃哪个瓜' }
-  ],
-  campaignLocation: '学校大厅',
-  campaignImages: [
-    '/image.jpg',
-    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg',
-    'https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg',
-    '/image.jpg'
   ]
 }
 
@@ -67,9 +50,9 @@ const {
 } = mainInfo.value
 
 onMounted(() => {
-  document.addEventListener('mousemove', (e) => {
-    cursor.value.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
-  })
+  // document.addEventListener('mousemove', (e) => {
+  //   cursor.value.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`
+  // })
   setInterval(() => {
     if (currentVideo.value !== videos.length - 1) {
       currentVideo.value++
@@ -82,7 +65,7 @@ var ua = window.navigator.userAgent.toLowerCase().includes('safari')
 </script>
 
 <template>
-  <div class="cursor hidden lg:block" ref="cursor"></div>
+  <!-- <div class="cursor hidden lg:block" ref="cursor"></div> -->
   <div class="fixed scroll-smooth">
     <!-- <div :class="index === currentVideo ? 'block' : 'hidden'" v-for="(video, index) in videos"> -->
     <div>
