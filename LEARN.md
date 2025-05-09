@@ -1,5 +1,7 @@
 **Coding Journey of the CLPHS Canteen Day 2024 Landing Page**
 
+> "Before diving into the code, take a quick look at what the event was all about on the [official CLPHS Canteen Day 2024 website](https://canteenday.vercel.app) -— it’ll help you understand the purpose behind this project."
+
 ## 🧠 What I Learned from Building the Canteen Day Website
 
 This was more than just a school project—it was a real-world application with real users, timelines, feedback, and expectations. Here are some key lessons and reflections from building [canteenday.vercel.app](https://canteenday.vercel.app).
