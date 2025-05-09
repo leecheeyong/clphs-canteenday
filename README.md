@@ -1,5 +1,5 @@
 # [锺灵独立中学第63届食堂日网站](https://canteen.dino.icu)
-Chung Ling Private High School Canteenday 2024 Landing Page
+Chung Ling Private High School Canteen Day 2024 Landing Page
 
 ## About
 - Event participants' guide, provide detailed information about the event
