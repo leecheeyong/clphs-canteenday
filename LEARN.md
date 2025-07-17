@@ -13,7 +13,6 @@ This was more than just a school project—it was a real-world application with 
 * **Vue.js**: Learned how to structure components effectively, use props and emit events, and manage state reactively.
 * **TailwindCSS**: Greatly sped up styling. Learned to think in utility classes and embrace mobile-first, responsive design.
 * **Boxicons** and other libraries: Used icons and animations to make the site more engaging and intuitive.
-* **Figma to Code**: Translated a full UI/UX prototype into production-ready code with pixel accuracy.
 
 ---
 
@@ -40,7 +39,6 @@ This was more than just a school project—it was a real-world application with 
 * Use a CMS or content API to make updating event info easier for non-developers.
 * Add a language toggle (EN/中文) to improve accessibility.
 * Automate image optimization and use lazy loading for even better performance.
-* Write more unit tests, especially for critical UI interactions.
 * Use of AI which is now broadly available.
 
 ---
